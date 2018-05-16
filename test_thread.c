@@ -1,3 +1,6 @@
+/*
+ * gcc test_thread.c -o test_thread   -lpthread 
+*/
 #include <stdio.h>
 #include <pthread.h>
 #include <stdlib.h>
