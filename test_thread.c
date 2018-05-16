@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <pthread.h>
+#include <stdlib.h>
 
 //typedef long int pthread_t;
 pthread_t ntid;
@@ -11,7 +12,7 @@ void print_ids(char *s)
   pid = getpid();
   tid = pthread_self();
   printf("%s, pid:%lu, tid: %lu (0x%lx)\n",
-          (unsigned long)pid, (unsigned long)tid, (unsigned long)tid);
+          s, (unsigned long)pid, (unsigned long)tid, (unsigned long)tid);
 }
 
 void * thr_fn(void *arg)
